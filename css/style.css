@@ -20,6 +20,7 @@ body
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    border-bottom: 1px solid white;
 }
 .ContentBox
 {
@@ -53,9 +54,27 @@ span {
     border-right: .05em solid;
     animation: caret 1s steps(1) infinite;
   }
-  
   @keyframes caret {
     50% {
       border-color: transparent;
     }
+  }
+  #MainGame
+  {
+    height: 100%;
+    width: 100%;
+    background-color:#063968;
+  }
+  .Squarebox
+  {
+    font-size: 4em;
+    color: white;
+    background-color: wheat;
+    border-radius: 20px;
+    margin: 20px;
+    text-align: center;
+  }
+  .Disbox
+  {
+    width: 40%;
   }

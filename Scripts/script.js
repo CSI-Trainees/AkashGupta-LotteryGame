@@ -1,12 +1,12 @@
 function GenRand()
 {
- return Math.floor((Math.random()*10));
+ return Math.floor((Math.random()*10)+1);
 }
 function ins()
 {
-   for(let i =0 ; i<10 ; i++)
+   for(let i =1 ; i<=9 ; i++)
    {
-       $(".buttons").append("<input class=\"butstyle\" value="+ i +" type = \"button\"></input>");
+       $(".butcontain").append("<input class=\"butstyle col-3\"  value="+ i +" type = \"button\"></input>");
    }  
 }
 
@@ -19,9 +19,9 @@ function ins()
     }
    );
 
-function appdiv(Val)
+function appdiv(Val,el)
 {
-   $(".bruhh").append("<p>"+Val+"</p>");
+   el.text(Val);
 }
 
 let RandomArray = new Array(GenRand(),GenRand(),GenRand());
@@ -38,30 +38,30 @@ function CompArray(value,index,array)
       points =  points+1;
   }
 }
-
+let flag = 0;
 function ValAppend(_inp)
 {
     if(Input1 == false)
     {
         InputArray[0] = _inp;
-        appdiv(InputArray[0]);
+        appdiv(InputArray[0],$("#FirstDis"));
         Input1 = true;
         return;        
     }
     if(Input2 == false)
     {
         InputArray[1] = _inp;
-        appdiv(InputArray[1]);
+        appdiv(InputArray[1],$("#SecondDis"));
         Input2 = true;
         return;        
     }
     if(Input3 == false)
     {
         InputArray[2] = _inp;
-        appdiv(InputArray[2]);
+        appdiv(InputArray[2],$("#ThirdDis"));
         Input3 = true;        
     }
-    if(Input1 ==  true && Input2 == true && Input3 == true)
+    if(Input1 ==  true && Input2 == true && Input3 == true && flag == 0)
     {
             RandomArray.forEach(CompArray);
             switch(points)
@@ -71,6 +71,7 @@ function ValAppend(_inp)
                 case 2 : alert("Congrats for winning $20");break;
                 case 3 : alert("Congrats for winning $30");break;
             }
+            flag = 1;
             return;  
     }
 }

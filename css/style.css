@@ -1,7 +1,14 @@
 .butstyle
 {
-    height: 40px;
-    width: 40px;
+    margin: 5px;
+    font-size:4vh;
+    border-radius:20px;
+    color: white;
+    background-color: #041f36;
+}
+.butstyle:hover
+{
+  background-color: #063968;
 }
 *
 {
@@ -31,13 +38,13 @@ body
 #TypeWriter
 {
   color: white;
-  font-size: 3em;
+  font-size: 6vw;
 }
 .Link
 {
     text-decoration: none;
     color: white;
-    font-size: 2em;
+    font-size: 4vw;
     padding: 2px 10px 2px 10px;
     border: 3px solid #041f36;
     border-radius: 20px;
@@ -68,13 +75,35 @@ span {
   .Squarebox
   {
     font-size: 4em;
-    color: white;
-    background-color: wheat;
+    color: black;
+    background-color: white;
     border-radius: 20px;
-    margin: 20px;
+    margin: 15px;
     text-align: center;
+  }
+  .Dis
+  {
+    width: 100%;
+    height: 100%;
   }
   .Disbox
   {
     width: 40%;
+    height:50%;
+  }
+  .buttons
+  {
+    height:50%;    
+  }
+  .butcontain
+  {
+    width: 100%;
+    height:100%;
+  }
+  @media screen and (min-width : 700px)
+  {
+    .Squarebox
+    {
+      font-size: 5em;
+    }
   }

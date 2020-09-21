@@ -137,6 +137,10 @@ span {
     flex-shrink: 0;
     height: 100%;
   }
+  .Non
+  {
+    display: none;
+  }
   .BuckContainer
   {
     width: 100%;
@@ -211,4 +215,25 @@ span {
   color: #335700;
   background-color:#75c10d ;
   box-shadow: 0 0 10px #75c10d,0 0 40px #75c10d,0 0 80px #75c10d;
+}
+.ContactIcons
+{
+  margin:20px;
+  color: white;
+  transition: all 0.5s;
+}
+#Insta:hover
+{
+  font-weight: bold;
+  text-shadow: 0px 0px 10px #e90ede , 0px 0px 40px #e90ede;
+}
+#Facebook:hover
+{
+  font-weight: bold;
+  text-shadow: 0px 0px 10px #075af3 , 0px 0px 40px #075af3;
+}
+#Twitter:hover
+{
+  font-weight: bold;
+  text-shadow: 0px 0px 10px #07c4f3 , 0px 0px 40px #07c4f3;
 }

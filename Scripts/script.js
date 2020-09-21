@@ -66,12 +66,20 @@ function ValAppend(_inp)
             RandomArray.forEach(CompArray);
             switch(points)
             {
-                case 0 : alert("better luck next time");break;
-                case 1 : alert("Congrats for winning $10");break;
-                case 2 : alert("Congrats for winning $20");break;
-                case 3 : alert("Congrats for winning $30");break;
+                case 0 : ActiveClass("#Buck0");break;
+                case 1 : ActiveClass("#Buck10");break;
+                case 2 : ActiveClass("#Buck20");break;
+                case 3 : ActiveClass("#Buck30");break;
             }
             flag = 1;
             return;  
     }
 }
+function ActiveClass(v) 
+{
+  $("#Lasun").removeClass("Non");
+  $(v).addClass("Active");
+  var el = document.getElementById("Lasun");
+  el.scrollIntoView();
+}
+

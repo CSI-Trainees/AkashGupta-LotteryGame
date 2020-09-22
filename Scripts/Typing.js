@@ -1,6 +1,6 @@
 $(document).ready(function()
 {
-    var dataText = [ "Want to earn some money ?","Pay your debts ?", "This is your oppurtunity" , "Play this game right now !"];
+    var dataText = [ "Want to go to space ?","Earn some galactic bucks ?", "This is your oppurtunity" , "Play this lottery right now !"];
     function typeWriter(text, i, fnCallback) {
         // chekc if text isn't finished yet
         if (i < (text.length)) {

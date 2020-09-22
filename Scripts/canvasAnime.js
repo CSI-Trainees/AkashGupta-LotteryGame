@@ -65,8 +65,8 @@ for(var i= 0 ;i<500;i++)
      var randr =   (Math.random()*20)+1;
      var ranx  = (Math.random()*(width - randr *2))+randr;
      var rany  = (Math.random()*(height - randr *2))+randr;
-     var randx = Math.random() * 3 +1;  
-     var randy = Math.random() * 3 +1;
+     var randx = Math.random() * 2 +1;  
+     var randy = Math.random() * 2 +1;
      array.push(new circle(ranx,rany,randr,randx,randy));
 }
 function animate()

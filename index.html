@@ -7,6 +7,9 @@
    </head>
    <body>
     <div id="FrontPage">
+      <div class="Canvas">
+      <canvas></canvas>
+      </div>
         <div class="ContentBox">
             <p id="TypeWriter"></p>
         </div>
@@ -14,7 +17,7 @@
     </div>  
     <div id="MainGame">
       <div class="Container-fluid Disbox">
-      <div class="row justify-content-center align-items-center Dis ">
+      <div class="row justify-content-center align-items-center Dis">
        <div id="FirstDis" class="Squarebox col">0</div>
        <div id="SecondDis"class="Squarebox col">0</div>
        <div id="ThirdDis"class="Squarebox col">0</div>
@@ -108,7 +111,8 @@
             <label>Password:</label><br>
             <input type="password" style="width:75%;"><br><br>
             <input type="submit" class="Submi" value="Log In">
-           </form>
+           </form><br>
+           <a href="#SignIn" class="Sigh">Sign In</a>
           </div>
       </div>
     </div>
@@ -129,5 +133,6 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="Scripts/script.js"></script>
     <script src="Scripts/Typing.js"></script>
+    <script src="Scripts/canvasAnime.js"></script>
   </body>
 </html>

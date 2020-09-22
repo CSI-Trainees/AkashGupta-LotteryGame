@@ -18,9 +18,18 @@ html {
   background-color:#75c10d ;
   box-shadow: 0 0 10px #75c10d,0 0 40px #75c10d,0 0 80px #75c10d;
 }
-*
+.Canvas
 {
-    box-sizing: border-box;
+  position: absolute;
+  z-index: -2;
+  width: 100%;
+  height: 100%;
+  background-color:#031321;
+}
+canvas
+{
+  width: 100%;
+  height: 100%;
 }
 body
 {
@@ -28,9 +37,9 @@ body
 }
 #FrontPage
 {
+    position: relative;
     width: 100%;
     height: 100%;
-    background-color:#031321;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -46,13 +55,14 @@ body
 #TypeWriter
 {
   color: white;
-  font-size: 6vw;
+  font-size: 4vw;
+  text-transform: capitalize;
 }
 .Link
 {
     text-decoration: none;
     color: #2196f3;
-    font-size: 4vw;
+    font-size: 3vw;
     text-transform: capitalize;
     padding: 2px 10px 2px 10px;
     border-radius: 25px;
@@ -124,10 +134,16 @@ span {
     width: 100%;
     height: 100%;
     display: flex;
-    overflow-x: hidden;
+    overflow-x: auto;
     background-color: #031321;
-    -webkit-overflow-scrolling:touch;
-    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    scroll-snap-type: x mandatory; 
+    scroll-behavior: smooth;
+  }
+  #Forms::-webkit-scrollbar
+  {
+    width: 0px;
+    height: 0px;
   }
   .FormContent
   {
@@ -236,4 +252,23 @@ span {
 {
   font-weight: bold;
   text-shadow: 0px 0px 10px #07c4f3 , 0px 0px 40px #07c4f3;
+}
+.Sigh
+{
+   text-decoration: none;
+    color: #2196f3;
+    font-size: 1vw;
+    text-transform: capitalize;
+    padding: 2px 10px 2px 10px;
+    border-radius: 25px;
+    transition: all 0.5s;
+}
+.Sigh:hover
+{
+    text-decoration: none;
+    color: #255784;
+    box-shadow: 0 0 10px ,0 0 20px #2196f3;
+    background-color: #2196f3;
+    border-radius: 10px;
+    cursor: pointer;
 }

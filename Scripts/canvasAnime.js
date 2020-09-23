@@ -1,4 +1,4 @@
-var canvas = document.querySelector('canvas');
+var canvas = document.querySelector('#PartAnime');
 canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
 var c = canvas.getContext('2d');
@@ -12,7 +12,6 @@ window.addEventListener("mousemove",function(event)
 {
     mouse.x = event.x;
     mouse.y = event.y;
-   console.log(mouse);
 });
 var colorArray = ["#334752","#46B39D","#F0CA4D","#E37332","#DE4F3C"];
 function circle (x,y,radius,dx,dy)
